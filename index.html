@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redirecting...</title>
+        <script>
+            // Set redirect delay in milliseconds (e.g., 5000 = 5 seconds)
+            const redirectDelay = 3000;
+            const targetURL = "https://bit.ly/vedjmachinelearning"; // Change this to your desired link
+
+            // Automatically redirect after delay
+            setTimeout(() => {
+                window.location.href = targetURL;
+            }, redirectDelay);
+
+            // Manual redirect function
+            function redirectNow() {
+                window.location.href = targetURL;
+            }
+        </script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 10%;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 8px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>You are being redirected...</h1>
+        <p>If you are not redirected automatically, click the button below.</p>
+        <button onclick="redirectNow()">Go Now</button>
+    </body>
+</html>
